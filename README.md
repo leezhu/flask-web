@@ -1,4 +1,3 @@
-# dijstra
-this algorithm is used  c++,so easy to understand
-#GaJsp
-this is use Ga to sovle Job schedule Problem
+# MySQLdb
+是linux下连接mysql的包模块，可直接调用使用，非常简单
+
