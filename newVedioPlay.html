@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="zh_CN"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>凡纳斯教育-专注考研课程，让每位考研学子实现梦想！</title>
+  <meta name="keywords" content="湖南考研,凡纳斯教育,湖大考研,湖大会计,中南会计,湖大金融,湖南985考研,湖大金融,湖大北校区考研,湖大财院考研,中南金融考研,financeclass,专业课考研" />
+  <meta name="description" content="凡纳斯教育官网—凡纳斯专注财经类专业课考研课程，涵盖湖南3所985院校所有财经专业考研专业课程，全面的复习计划，高分学长课程，包你实现考研梦想。" />
+  <meta content="" name="csrf-token">
+  <meta content="0" name="is-login">
+  <meta content="1" name="is-open">
+  
+   <link rel="icon" href="assets/img/finance.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/finance.ico" type="assets/img/finance.ico" type="image/x-icon" media="screen">	<!--网页ico-->
+  
+          		
+	<link href="assets/css/bootstrap-blue-light.css" rel="stylesheet">
+
+<link rel="stylesheet" media="screen" href="assets/css/common.css">
+<!-- <link rel="stylesheet" media="screen" href="./testbtclass_files/bootstrap.min.css"> -->
+<link rel="stylesheet" media="screen" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="assets/css/es-icon.css">
+	<link href="assets/css/main-blue-light.css" rel="stylesheet">
+	<link href="assets/css/header-white.css" rel="stylesheet">
+	
+	<link href="assets/css/video-js.css" rel="stylesheet">
+	<!-- If you'd like to support IE8 -->
+	<script src="assets/js/videojs-ie8.min.js"></script>
+	
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+<script charset="UTF-8" src="assets/js/301449_ALL.js"></script>
+<script charset="UTF-8" src="assets/js/301449_BNX.js"></script>
+<script charset="UTF-8" src="assets/js/linkcheck.js"></script>
+<script type="text/javascript" src="assets/js/iadcbhelejdjjpgccbooamdanofceohh.js"></script>
+<script src="controller/vedioPlayContr.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtr">
+
+  <div class="es-wrap">
+
+  <header class="es-header navbar">
+    <nav class="collapse navbar-collapse  ">
+  <div class="navbar-header">
+    <div class="visible-xs  navbar-mobile">
+      <a href="javascript:;" class="navbar-more js-navbar-more">
+        <i class="es-icon es-icon-menu"></i>
+      </a>
+      <div class="html-mask"></div>
+      <div class="nav-mobile">
+        <form class="navbar-form" action="" method="get">
+          <div class="form-group">
+            <input class="form-control" placeholder="搜索" name="q">
+            <button class="button glyphicon glyphicon-search"></button>
+          </div>
+        </form>
+
+        <ul class="nav navbar-nav  ">
+                        
+      <li class="nav-hover">
+			<a href="" data-toggle="dropdown">课程  <b class="caret"></b></a>
+			<ul class="dropdown-menu" role="menu">
+              <li><a href="" target="_blank">考研专业课</a></li>
+              <li><a href="" target="_blank">考研数学课程</a></li>
+              <li><a href="" target="_blank">考研政治课程</a></li>
+              <li><a href="" target="_blank">考研英语课程</a></li>
+              <li><a href="" target="_blank">免费课程</a></li>
+          </ul>
+	</li>      
+      <li class="nav-hover">
+			<a href="" data-toggle="dropdown">资讯  <b class="caret"></b></a>
+			<ul class="dropdown-menu" role="menu">
+              <li><a href="">学员风采</a></li>
+              <li><a href="">学院新闻</a></li>
+              <li><a href="">行业资讯</a></li>
+          </ul>
+		</li>    
+      <li class="">
+  <a href="">圈子 </a>
+  </li>      
+      <li class="nav-hover">
+  <a href="" target="_blank" data-toggle="dropdown">关于我们  <b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+              <li><a href="">加入我们</a></li>
+              <li><a href="">团队介绍</a></li>
+              <li><a href="">联系我们</a></li>
+              <li><a href="">常见问题</a></li>
+          </ul>
+  </li>      
+      <li class="">
+  <a href="" target="_blank">APP下载 </a>
+  </li>          </ul>
+      </div>
+    </div>
+    <a href="newIndex.html" class="navbar-brand">
+              <img src="assets/img/logo_2.png" width="200px" height="100px">
+          </a>
+  </div>
+
+    <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+          
+          <li class="nav-hover">
+			<a href="" data-toggle="dropdown">课程  <b class="caret"></b></a>
+			<ul class="dropdown-menu" role="menu">
+              <li><a href="javascript:;" ng-click="goToBuyCourse('01专业课')"target="_blank">考研专业课</a></li>
+              <li><a href="javascript:;" ng-click="goToBuyCourse('02数学课')" target="_blank">考研数学课程</a></li>
+              <li><a href="javascript:;"  ng-click="goToBuyCourse('03英语课')" target="_blank">考研英语课程</a></li>
+              <li><a href="javascript:;" ng-click="goToBuyCourse('04政治课')" target="_blank">考研政治课程</a></li>
+              <li><a href="openCourse.html" target="_blank">免费课程</a></li>
+          </ul>
+	</li>   
+ <li class="">
+<a href="docDownload.html" target="_blank">资料下载 </a>
+  </li>   
+  <li class="nav-hover">
+  <a href="" target="_blank" data-toggle="dropdown">关于我们  <b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+              <li><a href="join.html">加入我们</a></li>
+              <li><a href="about.html">团队介绍</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+          </ul>
+  </li>       
+  </ul>
+    <div class="navbar-user  left ">
+      <ul class="nav user-nav">
+		<!-- <li class="hidden-xs" ><a class=" "  href="" data-toggle="modal" data-target="#myModal"  id = "loginbtn" style="display:block">登录/注册</a></li> -->
+		<li class="dropdown " id="loginSuccess" style="display:block">
+          <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">您好,{{name}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="userCourse.html"><i class="glyphicon glyphicon-user"></i>个人中心</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a ng-click="exit()"><i class="glyphicon glyphicon-off"></i>注销</a></li>
+          </ul>
+        </li>
+     </ul>
+	  <form class="navbar-form  navbar-left form-search" role="search" >
+        <div class="form-group">
+          <input  type="text" class="input-medium search-query" placeholder="搜索..." ng-model="info_a" >
+        
+        <button class="button es-icon es-icon-search" ng-click="searchNavSubmit()"></button>
+		</div>
+      </form>
+    </div>
+  </nav>
+</header>     
+          
+      <div id="content-container" class="container">
+          <ol class="breadcrumb open-course-breadcrumb">
+    <li><a href="newIndex.html">首页</a></li>
+	 <li><a href="buyCourse.html?school=null&courseType=00">全部课程</a></li>
+    <li><a href="" ng-click="classDetail(course.course_id)">{{course.course_name}}</a></li>
+	<li id="vedio_name" style="font-size:20px"></li>
+  </ol>
+    <div class="open-course-header">
+    <div class="row">
+
+<div class="col-md-8 open-course-views" >
+  <input type="hidden" id="firstLesson" >
+    <div id="lesson-swf-player" class="lesson-content embed-responsive" style="height: 100%;">
+	  <div  style="width: 100%; height: 100%;">
+		<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" style="width: 100%; height: 100%;"
+		  data-setup="{}" src="">
+			<source id = "myVedio" src="" type="video/mp4">
+			<p class="vjs-no-js">
+			  To view this video please enable JavaScript, and consider upgrading to a web browser that
+			  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			</p>
+			
+		 </video>
+		  <script src="assets/js/video.min.js"></script>	
+		  <script type="text/javascript">
+			var myPlayer = videojs('my-video');
+			videojs("my-video").ready(function(){
+				var myPlayer = this;
+				myPlayer.play();
+			});
+			$('#my-video').bind('contextmenu',function() { return false; }); 
+		</script>
+	  </div>
+    </div>
+   
+  </div>
+
+      <div class="col-md-4 open-course-tab js-open-course-tab">
+        <ul class="clearfix">
+          <li class="tab-header active"><i class="es-icon es-icon-staroutline prm"></i>课程列表</li>
+                  </ul>
+        <div id="content">
+          <ul id="recommand-tab">
+            
+			 <div class="es-piece" >
+				<div class="piece-body" style="overflow-y:auto;max-height:450px" >
+					<ul class="period-list" id="course-item-list">
+						<!-- <li class="period lesson-item lesson-item-4242" data-id="4242" data-num="1" ng-repeat="vd in vedioNames">
+							<a href="" ng-click="goToVedio(vd.vedio_path,vd.vedio_name)"   title="{{vd.vedio_name}}">
+								<i class="es-icon es-icon-undone status-icon"></i>
+								<span class="title">{{vd.vedio_name | suffix}}</span>		  
+							</a>
+						</li> -->
+						
+					</ul>
+					
+					<!-- <nav>
+						<ul class="pagination pagination-sm">
+							<li>
+								<a ng-click="Previous()">
+									<span>上一页</span>
+								</a>
+							</li>
+							<li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+								<a ng-click="selectPage(page)" >{{ page }}</a>
+							</li>
+							<li>
+								<a ng-click="Next()">
+									<span>下一页</span>
+								</a>
+							</li>
+						</ul>
+				</nav> -->
+				
+				</div>
+				
+			</div>
+	
+          </ul>
+                  </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="es-section open-course-detail clearfix">
+  <div class="open-course-detail-main media hidden-sm hidden-xs">
+    <div class="media-left">
+      <img class="img-responsive" ng-src="{{course.course_pic_path}}" alt="">
+    </div>
+    <div class="media-body">
+      <div class="title">{{course.course_name}}</div>
+      <div class="metas">
+        <span><i class="es-icon  es-icon-people mrs"></i>{{course.course_buy_num}}</span>
+
+      </div>
+    </div>
+  </div>
+  <div class="open-course-detail-operation">
+   <!--  <div class="operation-list">
+      <div class="operation-img operation-zan">
+        <a href="javascript:;" class="js-like-num" data-like-url="/open/course/10/like" data-cancel-like-url="/open/course/10/unlike"><i class="es-icon es-icon-thumbup"></i></a>
+      </div>
+      <span>6</span>
+    </div> -->
+    <div class="operation-list">
+      <div class="operation-img  operation-share es-share top">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="es-icon es-icon-share"></i></a>
+                   
+
+      </div>
+      分享
+    </div>
+    <div class="operation-list  no-border">
+      <div class="operation-img operation-collection ">
+        <a href="javascript:;" class="js-favorite-num" data-cancel-favorite-url="/open/course/10/unfavorite" data-favorite-url="/open/course/10/favorite" data-login-url="/login/ajax"><i class="es-icon es-icon-bookmarkoutline"></i></a>
+      </div>
+      <span>收藏</span>
+    </div>
+   </div>
+  </div>
+
+ 
+      </div>
+	  
+	        <div id="content-container" class="container">
+        
+    <div class="course-detail row">
+    <div class="col-lg-9 col-md-8  course-detail-main">
+ <section class="es-section">            
+<div class="nav-btn-tab">
+  <ul class="nav nav-tabs" role="tablist" id="myTab">
+          <li role="presentation" class="active"><a href="#courseDescribe"  data-toggle="tab">课程概览</a></li>
+    
+  <li class="highlight" style="left: 0px; width: 124px; overflow: hidden;"></li></ul>
+</ul>
+  </div>  
+<div id="myTabContent " class="tab-content "> 
+
+<div class="course-detail-content fade active in" id="vedioList" >
+
+		     
+			  <div class="es-piece " id="es">
+					<div class="piece-header">
+					  课程列表
+					</div>
+				 <!--  <div class="piece-body" >
+					  <ul class="period-list" id="course-item-list">										
+				  </ul>
+				  </div> -->
+				  
+						  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							  <div class="panel panel-default">
+								
+							  </div>							 
+							</div>
+			 </div>		
+</div>
+     
+  
+  
+  <!--课程列表部分-->
+   <!--  <div class="course-detail-content fade" >
+
+   
+    
+  </div> -->
+</div>
+</section>
+</div>
+</div>
+</div>
+   <div class="es-footer-link">
+  <div class="container">
+    <div class="row">
+      
+<div class="col-md-8 footer-main clearfix">
+  <div class="link-item ">
+  <h3><a href="" target="_blank">团队介绍</a></h3>
+
+</div>
+
+  <div class="link-item ">
+  <h3><a href="" target="_blank">加入我们</a></h3>
+
+</div>
+
+
+  <div class="link-item hidden-xs">
+  <h3><a href="" target="_blank">联系我们</a></h3>
+
+</div>
+
+ 
+
+</div>
+
+
+
+
+
+    </div>
+  </div>
+</div>            
+<footer class="es-footer">
+  <div class="copyright">
+    <div class="container">
+            Powered by <a href="https://www.financeclass.cn" target="_blank">长沙市凡纳斯教育科技有限公司</a>
+		
+
+
+      <div class="mts">
+                  课程内容版权均归
+          <a href="https://www.financeclass.cn">
+            凡纳斯教育
+          </a>
+          所有
+                          <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+            湘ICP备16015351号-1
+          </a>
+              </div>
+    </div>
+  </div>
+</footer>    
+      </div>
+
+
+				
+</body>
+</html>

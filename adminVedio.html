@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>凡纳斯教育后台管理系统v1</title>
+ <link rel="shortcut icon" href="assets/img/finance.ico" type="assets/img/finance.ico" type="image/x-icon" media="screen">	
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap-table.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-table-filter-control.css">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+     <div id="wrapper" ng-app="vedioApp" ng-controller="vedioController">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="adminIndex.html">凡纳斯教育后台管理系统v1.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> 个人信息</a>
+                        </li> -->
+                        <li><a data-toggle="modal" href="#passwordModal"><i class="fa fa-gear fa-fw"></i> 修改密码</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="" ng-click="exit()"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+<!--                         <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div> -->
+                            <!-- /input-group -->
+<!--                         </li> -->
+                        <li>
+                            <a href="adminIndex.html"><i class="fa fa-dashboard fa-fw"></i> 首页</a>
+                        </li>
+                         <li>
+                            <a href=""><i class="fa fa-bar-chart-o fa-fw"></i> 学员管理<span class="fa arrow"></span></a>
+                             <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="adminStudent.html">学员基本信息管理</a>
+                                </li>
+                                <li>
+                                    <a href="adminStudentCourse.html">课程购买管理</a>
+                                </li>
+                            </ul> 
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <!--  <li>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> 视频</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li> -->
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i>视频资源管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="adminAddCourse.html">增加课程</a>
+                                </li>
+                                <li>
+                                    <a href="adminCourse.html">课程管理</a>
+                                </li>
+                                <li>
+                                    <a href="adminVedio.html">课程视频管理</a>
+                                </li>
+                               
+                        
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+						<li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i>下载文件管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="adminUploadDoc.html">上传文件</a>
+                                </li>
+                                <li>
+                                    <a href="adminManageDoc.html">文件管理</a>
+                                </li>
+ 
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="adminUploadVedio.html"><i class="fa fa-edit fa-fw"></i>上传视频</a>
+                           
+                        </li>
+						<li>
+                            <a href="adminPoster.html"><i class="fa fa-edit fa-fw"></i>上传海报</a>
+                           
+                        </li>
+                     
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        
+
+
+
+          <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+					<div class="panel panel-default panel-primary">
+
+					<div class="panel-heading">
+                            课程视频管理
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                           <!--  <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+										<th>#</th>
+										<th>所属课程类别</th>
+										<th>所属课程名</th>
+										<th>视频名</th>
+										<th>课程所属章节</th>
+										<th>视频上传时间</th>
+                                    </tr>
+                                </thead>
+								
+                            </table> -->
+							<table id="tablelist" data-filter-control="true" data-filter-show-clear="true">
+								<div id="toolbar" class="btn-group">
+								<button id="btn_add" type="button" class="btn btn-danger" ng-click="deleteVedio()">
+									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>删除视频
+								</button>								
+							</div>
+								<thead  >
+									<tr>
+										<th data-field="state" data-checkbox="true"></th>
+										<th  data-field="index" data-formatter="indexFormatter" >序号</th>  
+										<th data-field="vedio_course_type" data-sortable="true" data-align="left" data-filter-control="select">课程类别</th>
+										<th data-field="vedio_course_name" data-sortable="true" data-filter-control="select">课程名称</th>
+										<th data-field="vedio_name" data-sortable="true">视频名称</th>
+										<th data-field="vedio_course_chapter" data-sortable="true" data-filter-control="select">所属章节</th>
+										<th data-field="vedio_chapter_name" data-sortable="true">章节标题</th>
+										<th data-field="vedio_upload_date" data-sortable="true" >上传时间</th>
+										</tr>
+									
+								</thead>
+							</table>
+                           
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            </div>
+                    <!-- /.col-lg-12 -->
+        </div>
+            <!-- /.row -->
+	 <script type="text/javascript">  
+         function indexFormatter(value, row, index) {  
+              return index+1;  
+         }  
+      </script> 
+	<!-- 章节修改框 -->
+<div class="modal fade " id="chapterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  data-backdrop="static">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加章节标题</h4>
+      </div>
+      <div class="modal-body" style="center">
+		<form class="form-horizontal">
+		  <div class="form-group">
+			<label  class="col-sm-3 col-sm-offset-1 control-label">课程名称</label>
+			<div class="col-sm-6">
+			  <input type="text" class="form-control" id="vedio_course_name" ng-model="data.vedio_course_name" placeholder="{{data.vedio_course_name}}" value="{{data.vedio_course_name}}" disabled>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label  class="col-sm-3 col-sm-offset-1 control-label">视频名称</label>
+			<div class="col-sm-6">		 
+			  <input type="text" class="form-control" id="vedio_name" ng-model="data.vedio_name" placeholder="{{data.vedio_name}}" value="{{data.vedio_name}}" disabled>
+			</div>
+		  </div>
+		   <div class="form-group">
+			<label  class="col-sm-3 col-sm-offset-1 control-label">章节标题</label>
+			<div class="col-sm-6">
+			  <input class="form-control"  ng-model="data.vedio_chapter_name" placeholder="{{data.vedio_chapter_name}}" value="{{data.vedio_chapter_name}}">
+			</div>
+		  </div>
+		  
+		</form>
+      </div>
+      <div class="modal-footer">
+		<button id="applySubmit" name="applySubmit" class="btn btn-primary"  ng-click="editFunction()">提交</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+      </div>
+    </div>
+  </div>
+</div>  
+
+        			<!-- 管理员修改密码模态框Modal -->
+						<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+							<div class="modal-dialog" role="document">
+							<form>
+								<div class="modal-content">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">修改密码</h4>
+								  </div>
+								  <div class="modal-body">
+										<div class="form-group">
+										<p>原密码</p><input class="form-control" ng-model = "init_pwd"placeholder="" name="password" type="password" required="required">
+										</div>
+										<div class="form-group">
+										<p>新密码</p><input class="form-control" ng-model = "new_pwd"placeholder="" name="password" type="password" required="required">
+										</div>
+										
+										<div class="form-group">
+										 <p>确认新密码</p><input class="form-control" ng-model = "conf_pwd"placeholder="" name="password" type="password" required="required">
+										</div>
+								</div>
+								 <div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+									<button type="submit" class="btn btn-primary" ng-click="editPwd()">修改密码</button>
+								  </div>
+								</div>
+							</form>
+							  </div>
+							  
+						</div>
+
+		<!-- /#page-wrapper -->
+		 </div>
+    <!-- jQuery -->
+      <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/angular.min.js"></script>
+
+
+    <script src="assets/js/bootstrap.min.js"></script>	
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="dist/js/sb-admin-2.js"></script>
+	
+	   <!-- Metis Menu Plugin JavaScript -->
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="assets/js/bootstrap-table.js"></script>
+
+<!-- Latest compiled and minified Locales -->
+<script src="assets/locale/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/ga.js"></script>
+<script src="assets/js/bootstrap-table-filter-control.js"></script>
+    <script src="controller/vedioController.js"></script>
+</body>
+
+</html>
